@@ -19,10 +19,10 @@ args = parser.parse_args()
 
 
 # Getting bucket information
-bucket_name = input("\nEnter S3 bucket name: ")
+bucket_name = input("\nEnter S3 bucket name (For ex: my-bucket): ")
 directory_path = input("\nEnter S3 URI of images folder (For ex: s3://my-bucket/images/): ")
 images_folder_key = directory_path.split(bucket_name)[-1][1:-1]
-output_path = input("\nEnter S3 URI of PDFs folder (For ex: s3://my-bucket/pdfs/): ")
+output_path = input("\nEnter S3 URI of folder where to save PDF files (For ex: s3://my-bucket/pdfs/): ")
 pdfs_folder_key = output_path.split(bucket_name)[-1][1:-1]
 s3 = boto3.client('s3')
 response = s3.list_objects_v2(Bucket=bucket_name, Prefix=images_folder_key)
