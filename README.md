@@ -5,7 +5,7 @@
 This repository contians two Python script files. One is **lambda_function.py** and other one is **s3_images_to_pdf.py**. Purpose of both scripts is different.
 
 <h3>s3_images_to_pdf.py:</h3> 
-This script file will convert all your s3 bucket images into a single PDF file. First install the required apt package and python packages:
+This script file will convert all your s3 bucket images into a single PDF file. Adding more functionality soon. First install the required apt package and python packages:
 
     sudo apt install python3-testresources    
     pip install -r requirements.txt
