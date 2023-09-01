@@ -1,3 +1,7 @@
+# This AWS Lambda function is for demonstration purpose only. It should not be used with much expectations. This code convert single s3 bucket image into pdf file.
+# This code does not combine multiple images togeter as pdf but only convert indivudial image to pdf.
+# To convert all S3 images into single PDF, use **s3_images_to_pdf.py** script.
+
 import boto3
 import fitz
 import os
